@@ -15,7 +15,7 @@ eureka:
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-env: test12
+env: test
 girl:
   name: lili
-  age: 37
+  age: 18
