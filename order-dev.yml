@@ -16,6 +16,25 @@ spring:
   redis:
     host: 192.168.99.100
     port: 6379
+  cloud:
+    stream:
+      bindings:
+        myMessageInput:
+          destination: myMessage
+          group: order
+          content-type: application/json
+        myMessageOutput:
+          destination: myMessage
+          group: order
+          content-type: application/json
+        myMessageInput2:
+          destination: myMessage2
+          group: order
+          content-type: application/json
+        myMessageOutput2:
+          destination: myMessage2
+          group: order
+          content-type: application/json
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
